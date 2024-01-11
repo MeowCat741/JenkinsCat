@@ -4,9 +4,25 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 public class UserRequest {
 
-    private String alias;
+    public String getAlias() {
+		return alias;
+	}
+	public void setAlias(String alias) {
+		this.alias = alias;
+	}
+	public UserRequest(String alias, String name) {
+		super();
+		this.alias = alias;
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	private String alias;
     private String name;
 }

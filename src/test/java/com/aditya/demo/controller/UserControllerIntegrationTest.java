@@ -122,7 +122,7 @@ public class UserControllerIntegrationTest {
     }
 
     private UserRequest givenUserRequest() {
-        UserRequest userRequest = new UserRequest();
+        UserRequest userRequest = new UserRequest("test","test");
         userRequest.setAlias(ALIAS);
         userRequest.setName(NAME);
         return userRequest;
